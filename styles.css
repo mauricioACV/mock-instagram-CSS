@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
+  max-height: 812px;
+}
+
+.container {
+  border-radius: 15px;
+  width: 375px;
+  max-height: 812px;
+  background: #e9e9e9;
+}
+
+/* ********************* */
+/* GLOBAL BOXES */
+/* ********************* */
+
+.first-box,
+.second-box,
+.third-box,
+.fourth-box,
+.fifth-box,
+.sixth-box {
+  margin: 8px 0 8px 0;
+}
+
+/* ********************* */
+/* FIRST BOX */
+/* ********************* */
+.first-box {
+  display: flex;
+  width: 100%;
+  height: 41px;
+}
+
+.mid-first-box {
+  border-left: none;
+  border-right: none;
+}
+
+.left-first-box,
+.right-first-box {
+  flex: 1;
+}
+
+.mid-first-box {
+  flex: 2;
+}
+
+.right-first-box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-first-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-first-box-clock {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.right-first-box img {
+  width: 20px;
+  height: 18px;
+}
+
+/* ********************* */
+/* SECOND BOX */
+/* ********************* */
+.second-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 211px;
+}
+
+.mid-second-box {
+  max-height: 95px;
+  display: flex;
+  border-top: none;
+  border-bottom: none;
+}
+
+.profile-photo img {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.profile-photo {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+}
+
+.plus img {
+  border: 1px solid #e9e9e9;
+  width: 18px;
+  height: 18px;
+}
+
+.plus {
+  position: relative;
+  top: 35px;
+  left: -15px;
+}
+
+.top-second-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.7;
+}
+
+.mid-second-box,
+.bottom-second-box {
+  flex: 2;
+}
+
+.left-mid-second-box {
+  width: 113px;
+}
+
+.right-mid-second-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-second-box-title {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.title-bottom-second-box,
+.description-bottom-second-box {
+  font-size: 13px;
+}
+
+.number-posts,
+.text-posts {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.number-posts,
+.number-followers,
+.number-following {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.text-posts,
+.text-followers,
+.text-following {
+  font-size: 11px;
+}
+
+.number-followers,
+.text-followers {
+  display: flex;
+  justify-content: center;
+}
+.number-following,
+.text-following {
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.followers,
+.following {
+  display: flex;
+  flex-direction: column;
+}
+
+.followers {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.following {
+  flex: 1.5;
+}
+
+.bottom-second-box {
+  padding: 15px;
+}
+
+.title-bottom-second-box {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* ********************* */
+/* THRID BOX */
+/* ********************* */
+.third-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 62px;
+}
+
+.third-box-button {
+  padding: 15px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.edit-profile-button {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid rgba(190, 185, 185, 0.918);
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a:visited {
+  color: black;
+}
+
+/* ********************* */
+/* FOURTH BOX */
+/* ********************* */
+.fourth-box {
+  display: flex;
+  width: 100%;
+  height: 41px;
+}
+
+.fourth-box-left-grid,
+.fourth-box-rigth-user-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fourth-box-left-grid img,
+.fourth-box-rigth-user-tag img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ********************* */
+/* FIFTH BOX */
+/* ********************* */
+.fifth-box {
+  width: 100%;
+  max-height: 334px;
+  overflow: hidden;
+}
+
+.photos-container {
+  padding-left: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+.photos-container img {
+  width: 121px;
+  height: 121px;
+}
+
+/* ********************* */
+/* SIXTH BOX */
+/* ********************* */
+.sixth-box {
+  display: flex;
+  width: 100%;
+  height: 86px;
+}
+
+.sixth-box-container {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sixth-box-home,
+.sixth-box-glass,
+.sixth-box-add,
+.sixth-box-heart,
+.sixth-box-user {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sixth-box-home img,
+.sixth-box-glass img,
+.sixth-box-add img,
+.sixth-box-heart img,
+.sixth-box-user img {
+  width: 25px;
+  height: 25px;
+}
+
+.sixth-box-heart {
+  position: relative;
+}
+
+.likes-contenedor {
+  position: absolute;
+  background-image: url(./imgs/like.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  bottom: 70px;
+  left: 13px;
+}
+
+.alert-point {
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  bottom: 30px;
+  left: 35px;
+}
+
+.user-container {
+  margin-left: 10px;
+}
